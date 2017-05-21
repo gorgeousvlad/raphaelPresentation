@@ -1,4 +1,3 @@
-//проверка возможностей рафаэля
 var paper = Raphael("paper","100%",700);
 
 // //создаем объекты
@@ -13,14 +12,7 @@ var arc5 = paper.path("M 60,70 L  110,70   A 50,50 0 1,1   60,20   Z").attr({"fi
 var objs = []
 objs.push(ellipse,circle,rect,path,arc2,arc3,arc4,arc5);
 
-// ellipse.click(function(){
-// 	console.log(this.attr)
-// 	ellipse.animate({fill:"red", "stroke-width": 20}, 2000, "ease");
-// })
-
-
 path__ = paper.path("M400, 300 L 400,350 450 350 500 350 500 400").attr({"fill":"purple","stroke-width": 0,"stroke-dasharray":"."})
-//path__.animate({"path":"M400, 300 L 400,350 450 350 500 350 500 400"},3000,"linear",function(){objs.push(path__)})
 objs.push(path__)
 
 //функции обработчики
@@ -79,8 +71,6 @@ for (var i =0; i < actions.length; i++){
 
 			st.click(function(env){
 
-				//if (!(st.my_clicked)){
-
 					//снимаем с остальных кнопок подсветку
 					buttons.forEach(function (button) {button[0].attr({"fill":"orange"})});
 					st.my_clicked = true;
@@ -102,11 +92,6 @@ for (var i =0; i < actions.length; i++){
 							cur.mouseout(mouseoutFunc);
 							if (!cur.initX){cur.initX = 0;}
 							if (!cur.initX){cur.initY = 0;}
-							// cur.initX = 0;
-							// cur.initY = 0;
-							// if (cur.data("transformSave")){
-							// 	cur.transform(cur.data("transformSave"))
-							// }
 							cur.dragHandler = cur.drag(moveFnc, startFnc, endFnc);
 							})(j);
 						};
