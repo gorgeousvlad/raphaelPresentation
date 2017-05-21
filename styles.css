@@ -3,6 +3,10 @@
 	stroke-width:2px;
 	stroke:blue;
 }
+.text{
+	font-size: 36px;
+	text-anchor:middle;
+}
 .no-select{
 	-moz-user-select:none;
 	-webkit-user-select:none;

@@ -15,6 +15,7 @@ objs.push(ellipse,circle,rect,path,arc2,arc3,arc4,arc5);
 path__ = paper.path("M400, 300 L 400,350 450 350 500 350 500 400").attr({"fill":"purple","stroke-width": 0,"stroke-dasharray":"."})
 objs.push(path__)
 
+paper.text(300,50,'Raphael.js').attr({"font-size":"36px"});
 //функции обработчики
 
 moveFnc = function(dx, dy) {
