@@ -1,0 +1,9 @@
+.black-blue{
+	fill:violet;
+	stroke-width:2px;
+	stroke:blue;
+}
+.no-select{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+}
